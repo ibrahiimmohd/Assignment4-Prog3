@@ -21,7 +21,8 @@ namespace Assignment4_Prog3
     public partial class MainWindow : Window
     {
         Random rand = new Random();
-        string[] ascii = "! \" # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \\ ] ^ _ ' a b c d e f g h i j k l m n o p q r s t u v w x y z ( | ) ~".Split(' ');
+        //string[] ascii = "! \" # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \\ ] ^ _ ' a b c d e f g h i j k l m n o p q r s t u v w x y z ( | ) ~".Split(' ');
+        string[] ascii = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".Split(' ');
 
         public MainWindow()
         {
@@ -30,21 +31,29 @@ namespace Assignment4_Prog3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int asciiCount = ascii.Length;
-            int nubmerOfWords = int.Parse(NumberOfWords.Text);
-            StringBuilder sb = new StringBuilder();
-            for (int i = nubmerOfWords - 1; i >= 0; i--)
+
+            string word = "";
+            StringBuilder sentence = new StringBuilder();
+            int number = int.Parse(NumberOfWords.Text);
+
+            for (int i = 1; i <= number; i++)
             {
-                int charactersCount = rand.Next(20);
-                string word = "";
-                for (int j = charactersCount; j >= 0; j--)
+                for (int j = 0; j <= rand.Next(20); j++)
                 {
-                    word += ascii[rand.Next(asciiCount)];
+                    word += ascii[rand.Next(ascii.Length)];
                 }
 
-                sb.Append($"{word} ");
+                if (i != number)
+                {
+                    sentence.Append($"{word} ");
+                }
+                else
+                {
+                    sentence.Append($"{word}");
+                }
             }
-            Result.Text = sb.ToString();
+
+            Result.Text = "Number of words in \"" + sentence + "\" is " + sentence.WordCount();
         }
     }
 }
