@@ -39,7 +39,7 @@ namespace Question1
                 intArray = GenerateIntArray(n);
                 displayIntLabel.Text = ConvertArrayToString(intArray);
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 MessageBox.Show("[#405] Bad Input.! Please try again");
             }
@@ -55,7 +55,7 @@ namespace Question1
                 doubleArray = GenerateDoubleArray(n);
                 displayDoubleLabel.Text = ConvertArrayToString(doubleArray);
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 MessageBox.Show("[#405] Bad Input.! Please try again");
             }
@@ -69,7 +69,7 @@ namespace Question1
                 int searchElement = Convert.ToInt32(numberOfElement);
                 MessageBox.Show(DisplayMessage(Search(intArray, searchElement))); 
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 MessageBox.Show("[#405] Bad Input.! Please try again");
             }
@@ -83,7 +83,7 @@ namespace Question1
                 double searchElement = Convert.ToDouble(numberOfElement); 
                 MessageBox.Show(DisplayMessage(Search(doubleArray, searchElement)));
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 MessageBox.Show("[#405] Bad Input.! Please try again");
             }
@@ -126,10 +126,17 @@ namespace Question1
             }
             else
             {
-                return $"Element found, position {isFound} in the array";
+                return $"[#200] Element found, position {isFound} in the array";
             }
         }
 
+        //// Not implement IComparable interface
+        //static int Search<T>(T[] arrayToSearch, T searchKey)
+        //{
+        //    return Array.IndexOf(arrayToSearch, searchKey);
+        //}
+
+        // Implement using IComparable interface
         private static int Search<T>(T[] arrayToSearch, T searchKey) where T : IComparable<T>
         {
             foreach (var element in arrayToSearch)
