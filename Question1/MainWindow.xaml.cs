@@ -20,8 +20,8 @@ namespace Question1
     /// </summary>
     public partial class MainWindow : Window, IComparable<string>
     {
-        int[] intArray;
-        double[] doubleArray;
+        int[] intArray = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        double[] doubleArray = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         public MainWindow()
         {
             InitializeComponent();
@@ -61,8 +61,6 @@ namespace Question1
             {
                 doubleArray[i] = rand.NextDouble() * 10;
             }
-            intGrid.ItemsSource = intArray;
-            doubleGrid.ItemsSource = doubleArray;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
