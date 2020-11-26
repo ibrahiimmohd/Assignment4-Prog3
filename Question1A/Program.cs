@@ -19,10 +19,26 @@ namespace Question1A
         //    }
         //    return -1;
         //}
-        static int Search<T>(T[] arrayToSearch, T searchKey)
+
+        //// Not implement IComparable interface
+        //static int Search<T>(T[] arrayToSearch, T searchKey)
+        //{
+        //    return Array.IndexOf(arrayToSearch, searchKey);
+        //}
+
+        // Implement using IComparable interface
+        static int Search<T>(T[] arrayToSearch, T searchKey) where T : IComparable<T>
         {
-            return Array.IndexOf(arrayToSearch, searchKey);
+            foreach (var element in arrayToSearch)
+            {
+                if (element.CompareTo(searchKey) == 0)
+                {
+                    return Array.IndexOf(arrayToSearch, element);
+                }
+            }
+            return -1;
         }
+
         static void Main(string[] args)
         {
             string[] wordList = { "okay", "yes", "maybe", "but", "no" };

@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="generateIntBtn" Click="generateIntBtn_Click" Content="Generate Integer" HorizontalAlignment="Left" Margin="249,92,0,0" VerticalAlignment="Top" Width="106"/>
+        <Button x:Name="generateDoubleBtn" Click="generateDoubleBtn_Click" Content="Generate Double" HorizontalAlignment="Left" Margin="589,92,0,0" VerticalAlignment="Top" Width="106"/>
+        <TextBox x:Name="elementsIntInput" HorizontalAlignment="Left" Height="23" Margin="84,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="elementsDoubleInput" HorizontalAlignment="Left" Height="23" Margin="405,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="142"/>
+        <Label Content="Enter number of element" HorizontalAlignment="Left" Margin="84,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="Enter number of element" HorizontalAlignment="Left" Margin="405,66,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="searchIntBtn" Click="searchIntBtn_Click" Content="Search Integer" HorizontalAlignment="Left" Margin="249,175,0,0" VerticalAlignment="Top" Width="108"/>
+        <Button x:Name="searchDoubleBtn" Click="searchDoubleBtn_Click" Content="Search Double" HorizontalAlignment="Left" Margin="587,175,0,0" VerticalAlignment="Top" Width="108"/>
+        <TextBox x:Name="searchIntInput" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="148" Margin="84,172,0,0"/>
+        <TextBox x:Name="searchDoubleInput" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="148" Margin="405,172,0,0"/>
+        <Label Content="Enter Search Integer value" HorizontalAlignment="Left" Margin="84,146,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.416,0.57" Width="148"/>
+        <Label Content="Enter Search Double value" HorizontalAlignment="Left" Margin="405,146,0,0" VerticalAlignment="Top" Width="148"/>
+        <!--<Label x:Name="displayIntLabel" Content="" HorizontalAlignment="Left" Margin="84,235,0,0" VerticalAlignment="Top" Height="166" Width="281"/>
+        <Label x:Name="displayDoubleLabel" Content="" HorizontalAlignment="Left" Height="166" Margin="405,235,0,0" VerticalAlignment="Top" Width="290"/>-->
+        <TextBlock x:Name="displayIntLabel" HorizontalAlignment="Left" Margin="84,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="170" Width="281"/>
+        <TextBlock x:Name="displayDoubleLabel" HorizontalAlignment="Left" Margin="405,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="183" Width="290"/>
+
     </Grid>
 </Window>
