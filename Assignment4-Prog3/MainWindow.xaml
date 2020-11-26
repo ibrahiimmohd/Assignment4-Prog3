@@ -7,10 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Enter the number of words:" HorizontalAlignment="Left" Margin="227,71,0,0" VerticalAlignment="Top" Width="194" Height="37"/>
-        <TextBox x:Name="NumberOfWords" HorizontalAlignment="Left" Height="23" Margin="387,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Generate Sentence" HorizontalAlignment="Left" Margin="346,149,0,0" VerticalAlignment="Top" Width="118" Height="31" Click="Button_Click"/>
-        <TextBlock x:Name="Result" HorizontalAlignment="Left" Margin="108,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="189" Width="618"/>
-
+        <Label Content="Enter the number of words:" HorizontalAlignment="Left" Margin="108,71,0,0" VerticalAlignment="Top" Width="204" Height="52" FontSize="16"/>
+        <TextBox x:Name="NumberOfWords" HorizontalAlignment="Left" Height="29" Margin="317,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <Button Content="Generate Sentence" HorizontalAlignment="Left" Margin="541,71,0,0" VerticalAlignment="Top" Width="118" Height="31" Click="Button_Click"/>
+        <TextBlock x:Name="Result" HorizontalAlignment="Left" Margin="34,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="268" Width="734"/>
     </Grid>
 </Window>

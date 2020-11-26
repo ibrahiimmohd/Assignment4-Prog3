@@ -31,9 +31,10 @@ namespace Assignment4_Prog3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             string word = "";
+
             StringBuilder sentence = new StringBuilder();
+
             int number = int.Parse(NumberOfWords.Text);
 
             for (int i = 1; i <= number; i++)
@@ -53,7 +54,7 @@ namespace Assignment4_Prog3
                 }
             }
 
-            Result.Text = "Number of words in \"" + sentence + "\" is " + sentence.WordCount();
+            Result.Text = "The number of words contained in \"" + sentence + "\" is " + sentence.WordCount();
         }
     }
 }
