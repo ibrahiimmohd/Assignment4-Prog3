@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Assignment4_Prog3.Properties
+namespace Question2.Properties
 {
 
 
