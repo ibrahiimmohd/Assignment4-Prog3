@@ -7,13 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Generate an int and double array" HorizontalAlignment="Left" Margin="280,60,0,0" VerticalAlignment="Top" Width="183" Click="Button_Click"/>
+        <Button Content="Generate an int and double array" HorizontalAlignment="Left" Margin="289,72,0,0" VerticalAlignment="Top" Width="183" Click="Button_Click"/>
         <DataGrid Name="intGrid"  HorizontalAlignment="Left" Height="200" Margin="538,60,0,0" VerticalAlignment="Top" Width="100"/>
         <DataGrid Name="doubleGrid" HorizontalAlignment="Left" Height="200" Margin="664,60,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBox Name="intText" HorizontalAlignment="Left" Height="23" Margin="280,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="doubleText" HorizontalAlignment="Left" Height="23" Margin="280,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Add to int Array" HorizontalAlignment="Left" Margin="123,103,0,0" VerticalAlignment="Top" Width="126" Click="Button_Click_1"/>
-        <Button Content="Add to double Array" HorizontalAlignment="Left" Margin="123,157,0,0" VerticalAlignment="Top" Width="126" Click="Button_Click_2"/>
-
+        <TextBox Name="searchText" HorizontalAlignment="Left" Height="23" Margin="313,116,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Search in int Array" HorizontalAlignment="Left" Margin="150,119,0,0" VerticalAlignment="Top" Width="126" Click="Button_Click_1"/>
     </Grid>
 </Window>

@@ -24,6 +24,7 @@ namespace Question1A
             string[] wordList = { "okay", "yes", "maybe", "but", "no" };
             Console.WriteLine("location of 'no' in wordlist is " + Search(wordList, "no"));
             Console.WriteLine("when location is not found in word list it is " + Search(wordList, "ayaya"));
+            Console.ReadKey();
         }
     }
 }
